@@ -1,0 +1,31 @@
+{
+    "name": "tanuck/cakephp-markdown",
+    "description": "Cakephp Markdown plugin for CakePHP 3.",
+    "license": "MIT",
+    "type": "cakephp-plugin",
+    "authors": [
+        {
+            "name": "Tanuck",
+            "email": "tanuck@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "cakephp/plugin-installer": "*"
+    },
+    "require-dev": {
+        "cakephp/cakephp": "3.0.*-dev",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tanuck\\Markdown\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tanuck\\Markdown\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
