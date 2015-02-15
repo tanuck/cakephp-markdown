@@ -11,7 +11,8 @@
     ],
     "require": {
         "php": ">=5.4",
-        "cakephp/plugin-installer": "*"
+        "cakephp/plugin-installer": "*",
+        "cebe/markdown": "1.0.x"
     },
     "require-dev": {
         "cakephp/cakephp": "3.0.*-dev",
