@@ -17,7 +17,7 @@ class MarkdownHelper extends Helper
      * @var array
      */
     protected $_defaultConfig = [
-        'parser' => 'GithubMarkdown',
+        'parser' => 'Markdown',
     ];
 
     /**
