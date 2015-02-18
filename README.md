@@ -45,7 +45,7 @@ Markdown is rendered using the [cebe/markdown](https://github.com/cebe/markdown)
 * GithubMarkdown - GitHubs own markdown flavour: [https://help.github.com/articles/github-flavored-markdown/](https://help.github.com/articles/github-flavored-markdown/)
 * MarkdownExtra - an extension of the original by michelf: [http://michelf.ca/projects/php-markdown/extra/](http://michelf.ca/projects/php-markdown/extra/)
 
-By default, the plugin will use, Markdown, the first of the 3 above. However you can specify which of the 3 you use wish to use when loading the helper. Like so:
+By default, the plugin will use Markdown, the first of the 3 above. However you can specify which of the 3 you use wish to use when loading the helper. Like so:
 
 ```php
     class FooController extends AppController
@@ -54,7 +54,7 @@ By default, the plugin will use, Markdown, the first of the 3 above. However you
             'Tanuck/Markdown.Markdown' => [
                 'parser' => 'GithubMarkdown'
             ]
-        ]
+        ];
     }
 ```
 
