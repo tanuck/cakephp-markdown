@@ -42,11 +42,17 @@ class MarkdownHelperTest extends TestCase
      */
     public function testTransform()
     {
+        // test markdown parsing
         $expected = "<h1>Markdown h1 header</h1>\n";
         $markdown = '# Markdown h1 header';
         $this->assertEquals($expected, $this->markdown->transform($markdown));
 
         $this->assertInstanceOf('cebe\markdown\Markdown', $this->markdown->parser);
+
+        // check error checking for non string input
+        $this->assertFalse($this->markdown->transform(1234));
+        $this->assertFalse($this->markdown->transform(true));
+        $this->assertFalse($this->markdown->transform([]));
     }
 
     /**
