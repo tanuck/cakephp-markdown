@@ -1,5 +1,7 @@
 /vendor/*
 composer.lock
+.vagrant
+Vagrantfile
 
 # IDE and editor specific files #
 #################################
