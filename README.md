@@ -60,4 +60,4 @@ By default, the plugin will use Markdown, the first of the 3 above. However you 
 
 ## License
 
-Asset Compress is offered under an [MIT license](http://www.opensource.org/licenses/mit-license.php).
+cakephp-markdown is offered under an [MIT license](http://www.opensource.org/licenses/mit-license.php).
