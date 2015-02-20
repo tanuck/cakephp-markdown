@@ -1,6 +1,8 @@
 # CakePHP Markdown
 
 [![Build Status](https://secure.travis-ci.org/tanuck/cakephp-markdown.svg?branch=master)](http://travis-ci.org/tanuck/cakephp-markdown)
+[![License](https://poser.pugx.org/tanuck/cakephp-markdown/license.svg)](https://packagist.org/packages/tanuck/cakephp-markdown)
+[![Total Downloads](https://poser.pugx.org/tanuck/cakephp-markdown/downloads.svg)](https://packagist.org/packages/tanuck/cakephp-markdown)
 
 CakePHP 3 plugin to parse markdown syntax in your view templates.
 
