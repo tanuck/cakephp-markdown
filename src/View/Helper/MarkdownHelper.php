@@ -24,12 +24,12 @@ class MarkdownHelper extends Helper
      * Parse Markdown input to HTML 5.
      *
      * @param string $input Markdown to be parsed.
-     * @return bool|string
+     * @return void|string
      */
     public function transform($input)
     {
         if (!is_string($input)) {
-            return false;
+            return;
         }
 
         if (!isset($this->parser)) {

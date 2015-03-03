@@ -50,9 +50,9 @@ class MarkdownHelperTest extends TestCase
         $this->assertInstanceOf('cebe\markdown\Markdown', $this->markdown->parser);
 
         // check error checking for non string input
-        $this->assertFalse($this->markdown->transform(1234));
-        $this->assertFalse($this->markdown->transform(true));
-        $this->assertFalse($this->markdown->transform([]));
+        $this->assertNull($this->markdown->transform(1234));
+        $this->assertNull($this->markdown->transform(true));
+        $this->assertNull($this->markdown->transform([]));
     }
 
     /**
