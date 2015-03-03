@@ -24,7 +24,7 @@ class MarkdownHelper extends Helper
      * Parse Markdown input to HTML 5.
      *
      * @param string $input Markdown to be parsed.
-     * @return void|string
+     * @return void|string if `$input` is not string return null, otherwise return parsed markdown string
      */
     public function transform($input)
     {
