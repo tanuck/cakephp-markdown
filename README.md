@@ -33,6 +33,33 @@ Then, load the helper where needed. For example, in your controller:
     }
 ```
 
+If you want it available for all of your views, put it in `src/View/AppView.php`:
+
+```
+class AppView extends View
+{
+    use UIViewTrait;
+
+    /**
+     * Initialization hook method.
+     *
+     * Use this method to add common initialization code like loading helpers.
+     *
+     * e.g. `$this->loadHelper('Html');`
+     *
+     * @return void
+     */
+    public function initialize()
+    {
+        parent::initialize();
+        $this->loadHelper('Html');
+        $this->loadHelper('Form');
+        $this->loadHelper('Flash');
+        $this->loadHelper('Tanuck/Markdown.Markdown');
+    }
+}
+```
+
 then in your templates, you can output markdown syntax like so:
 
 ```php
