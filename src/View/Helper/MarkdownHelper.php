@@ -28,8 +28,8 @@ class MarkdownHelper extends Helper
      */
     public function transform($input)
     {
-        if (!is_string($input)) {
-            return;
+        if (!is_string($input) && !is_object($input)) {
+            return false;
         }
 
         if (!isset($this->parser)) {
