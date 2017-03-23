@@ -8,17 +8,9 @@ CakePHP 3 plugin to parse markdown syntax in your view templates.
 
 ## Installation
 
-Include the following in your `composer.json` file:
-
 ```
-    "require": {
-        "tanuck/cakephp-markdown": "dev-master"
-    }
+tanuck/cakephp-markdown
 ```
-
-and then run:
-
-`composer update`
 
 ## Configuration & Usage
 
