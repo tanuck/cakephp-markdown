@@ -15,7 +15,7 @@
         "cebe/markdown": "1.x"
     },
     "require-dev": {
-        "cakephp/cakephp": "3.0.*-dev",
+        "cakephp/cakephp": "3.*",
         "phpunit/phpunit": "*",
         "cakephp/cakephp-codesniffer": "dev-master"
     },
