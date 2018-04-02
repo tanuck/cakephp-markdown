@@ -37,6 +37,7 @@ class MarkdownHelper extends Helper
             $this->parser = new $className();
             $this->parser->html5 = true;
         }
+
         return $this->parser->parse($input);
     }
 }
