@@ -33,7 +33,7 @@ class MarkdownHelper extends Helper
         }
 
         if (!isset($this->parser)) {
-            $className = "cebe\\markdown\\{$this->config('parser')}";
+            $className = "cebe\\markdown\\{$this->getConfig('parser')}";
             $this->parser = new $className();
             $this->parser->html5 = true;
         }
