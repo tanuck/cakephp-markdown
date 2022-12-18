@@ -1,6 +1,6 @@
 {
     "name": "tanuck/cakephp-markdown",
-    "description": "Cakephp Markdown plugin for CakePHP 3.",
+    "description": "Cakephp Markdown plugin for CakePHP 4.x",
     "license": "MIT",
     "type": "cakephp-plugin",
     "authors": [
@@ -10,12 +10,12 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
+        "php": ">=7.4",
+        "cakephp/cakephp": "^4.0",
         "cakephp/plugin-installer": "*",
         "cebe/markdown": "1.0.x"
     },
     "require-dev": {
-        "cakephp/cakephp": "3.0.*-dev",
         "phpunit/phpunit": "*",
         "cakephp/cakephp-codesniffer": "dev-master"
     },

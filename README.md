@@ -4,39 +4,35 @@
 [![License](https://poser.pugx.org/tanuck/cakephp-markdown/license.svg)](https://packagist.org/packages/tanuck/cakephp-markdown)
 [![Total Downloads](https://poser.pugx.org/tanuck/cakephp-markdown/downloads.svg)](https://packagist.org/packages/tanuck/cakephp-markdown)
 
-CakePHP 3 plugin to parse markdown syntax in your view templates.
+CakePHP 4 plugin to parse markdown syntax in your view templates.
 
 ## Installation
 
-Include the following in your `composer.json` file:
-
 ```
-    "require": {
-        "tanuck/cakephp-markdown": "dev-master"
-    }
+composer require tanuck/cakephp-markdown:dev-master
 ```
-
-and then run:
-
-`composer update`
 
 ## Configuration & Usage
 
-To your `config/bootstrap.php` file add `Plugin::load('Tanuck/Markdown');`
+To your `config/bootstrap.php` file add `\App\Application::addPlugin('Tanuck/Markdown');`
 
 Then, load the helper where needed. For example, in your controller:
 
 ```php
-    class FooController extends AppController
+class FooController extends AppController
+{
+    public function initialize(): void
     {
-        public $helpers = ['Tanuck/Markdown.Markdown'];
+        parent::initialize();
+        $this->viewBuilder()->setHelpers(['Tanuck/Markdown.Markdown']);
     }
+}
 ```
 
 then in your templates, you can output markdown syntax like so:
 
 ```php
-    echo $this->Markdown->transform($myMarkdownSyntax);
+echo $this->Markdown->transform($myMarkdownSyntax);
 ```
 
 ### Advanced Configuration
@@ -50,14 +46,18 @@ Markdown is rendered using the [cebe/markdown](https://github.com/cebe/markdown)
 By default, the plugin will use Markdown, the first of the 3 above. However you can specify which of the 3 you use wish to use when loading the helper. Like so:
 
 ```php
-    class FooController extends AppController
+class FooController extends AppController
+{
+    public function initialize(): void
     {
-        public $helpers = [
-            'Tanuck/Markdown.Markdown' => [
-                'parser' => 'GithubMarkdown'
-            ]
-        ];
+        parent::initialize();
+        $this->viewBuilder()->setHelpers([
+			'Tanuck/Markdown.Markdown' => [
+				'parser' => 'GithubMarkdown',
+			]
+		]);
     }
+}
 ```
 
 ## License
